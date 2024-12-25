@@ -1,0 +1,43 @@
+12:33:34.277 [main] INFO  com.api.listeners.TestListener - started!loginTest
+12:33:34.280 [main] INFO  com.api.listeners.TestListener - descrptionVerifying the login func
+12:33:37.462 [main] ERROR com.api.listeners.TestListener - Failed!loginTest
+12:33:37.534 [main] INFO  com.api.listeners.TestListener - Test Suite completed!!
+13:16:33.302 [main] INFO  com.api.listeners.TestListener - started!loginTest
+13:16:33.306 [main] INFO  com.api.listeners.TestListener - descrptionVerifying the login func
+13:16:35.342 [main] INFO  com.api.filters.LoggingFilter - Request: POST http://64.227.160.186:8080/api/auth/login
+13:16:35.343 [main] INFO  com.api.filters.LoggingFilter - Headers: Accept=*/*
+Content-Type=application/json
+13:16:36.270 [main] INFO  com.api.filters.LoggingFilter - Response Status: 200
+13:16:36.288 [main] INFO  com.api.filters.LoggingFilter - Response Body: {"token":"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1ZGF5MTIzNCIsImlhdCI6MTczNTExMjc5NiwiZXhwIjoxNzM1MTE2Mzk2fQ.90zYNgh61iLeZr8ziMmx9SUpZXEZxH0HTPOCmRej4Pk","type":"Bearer","id":3,"username":"uday1234","email":"disha102@gmail.com","roles":["ROLE_USER"]}
+13:16:36.514 [main] ERROR com.api.listeners.TestListener - Failed!loginTest
+13:16:36.601 [main] INFO  com.api.listeners.TestListener - Test Suite completed!!
+13:18:12.347 [main] INFO  com.api.listeners.TestListener - started!loginTest
+13:18:12.351 [main] INFO  com.api.listeners.TestListener - descrptionVerifying the login func
+13:18:14.674 [main] INFO  com.api.filters.LoggingFilter - Request: POST http://64.227.160.186:8080/api/auth/login
+13:18:14.675 [main] INFO  com.api.filters.LoggingFilter - Headers: Accept=*/*
+Content-Type=application/json
+13:18:15.690 [main] INFO  com.api.filters.LoggingFilter - Response Status: 200
+13:18:15.717 [main] INFO  com.api.filters.LoggingFilter - Response Body: {"token":"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1ZGF5MTIzNCIsImlhdCI6MTczNTExMjg5NiwiZXhwIjoxNzM1MTE2NDk2fQ.xk57nv9GtCwAhj_JhpxYyWPyyscv6fQT0-2tXbj0O1Y","type":"Bearer","id":3,"username":"uday1234","email":"disha102@gmail.com","roles":["ROLE_USER"]}
+13:18:15.852 [main] INFO  com.api.listeners.TestListener - passed!loginTest
+13:18:15.852 [main] INFO  com.api.listeners.TestListener - descrptionVerifying the login func
+13:18:15.899 [main] INFO  com.api.listeners.TestListener - Test Suite completed!!
+13:21:22.108 [main] INFO  com.api.listeners.TestListener - started!loginTest
+13:21:22.121 [main] INFO  com.api.listeners.TestListener - descrptionVerifying the login func
+13:21:25.701 [main] INFO  com.api.filters.LoggingFilter - Request: POST http://64.227.160.186:8080/api/auth/login
+13:21:25.702 [main] INFO  com.api.filters.LoggingFilter - Headers: Accept=*/*
+Content-Type=application/json
+13:21:28.082 [main] INFO  com.api.filters.LoggingFilter - Response Status: 200
+13:21:28.112 [main] INFO  com.api.filters.LoggingFilter - Response Body: {"token":"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1ZGF5MTIzNCIsImlhdCI6MTczNTExMzA4OCwiZXhwIjoxNzM1MTE2Njg4fQ.XxgICQL7aHJQgpgNfHnvWKpwharrl2tWYeUswwUmnBo","type":"Bearer","id":3,"username":"uday1234","email":"disha102@gmail.com","roles":["ROLE_USER"]}
+13:21:28.278 [main] INFO  com.api.listeners.TestListener - passed!loginTest
+13:21:28.278 [main] INFO  com.api.listeners.TestListener - descrptionVerifying the login func
+13:21:28.311 [main] INFO  com.api.listeners.TestListener - Test Suite completed!!
+13:32:48.773 [main] INFO  com.api.listeners.TestListener - started!loginTest
+13:32:48.778 [main] INFO  com.api.listeners.TestListener - descrptionVerifying the login func
+13:32:50.755 [main] INFO  com.api.filters.LoggingFilter - Request: POST http://64.227.160.186:8080/api/auth/login
+13:32:50.755 [main] INFO  com.api.filters.LoggingFilter - Headers: Accept=*/*
+Content-Type=application/json
+13:32:51.479 [main] INFO  com.api.filters.LoggingFilter - Response Status: 200
+13:32:51.502 [main] INFO  com.api.filters.LoggingFilter - Response Body: {"token":"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1ZGF5MTIzNCIsImlhdCI6MTczNTExMzc3MSwiZXhwIjoxNzM1MTE3MzcxfQ.wScefgunC77wtC4JXnUtKfMurDCf_GJlFMSPVJpeXtc","type":"Bearer","id":3,"username":"uday1234","email":"disha102@gmail.com","roles":["ROLE_USER"]}
+13:32:51.726 [main] INFO  com.api.listeners.TestListener - passed!loginTest
+13:32:51.727 [main] INFO  com.api.listeners.TestListener - descrptionVerifying the login func
+13:32:51.776 [main] INFO  com.api.listeners.TestListener - Test Suite completed!!
