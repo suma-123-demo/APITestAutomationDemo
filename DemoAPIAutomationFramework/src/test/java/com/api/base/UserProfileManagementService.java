@@ -17,4 +17,10 @@ public class UserProfileManagementService extends BaseService{
 		setAuthToken(token);
 		return putRequest(payload, BASE_PATH + "profile");
 	}
+	
+	public Response updatepartialProfile(String token,Object payload)
+	{
+		setAuthToken(token);
+		return patchRequest(payload,BASE_PATH + "profile" );
+	}
 }

@@ -26,7 +26,8 @@ public class BaseService { // wrapper for Rest Assured
 	
 	public void setAuthToken(String token)
 	{
-		requestSpecification.header("Authorization","Bearer " + token);
+		//requestSpecification.header("Authorization","Bearer " + token);
+		requestSpecification.auth().oauth2(token);
 	}
 	
 	public Response postRequest(Object payload, String endpoint)
@@ -39,9 +40,32 @@ public class BaseService { // wrapper for Rest Assured
 		return requestSpecification.get(endpoint);
 	}
 	
+	/*public Response getRequest(String endpoint,Object payload)
+	{
+		return requestSpecification.get(endpoint);
+	}*/
+	
 	public Response putRequest(Object payload,String endpoint)
 	{
 		return requestSpecification.contentType(ContentType.JSON).body(payload).put(endpoint);
+	}
+	
+	public Response patchRequest(Object payload,String endpoint)
+	{
+		return requestSpecification.contentType(ContentType.JSON).body(payload).patch(endpoint);
+	}
+	
+	public Response getRequestwithpathparam(String endpoint,  String key , String value)
+	{
+		//return requestSpecification.contentType(ContentType.JSON).queryParam(key, value)
+		//.queryParam(key, value)
+	return	requestSpecification.contentType(ContentType.JSON).pathParam(key, value)
+			.get(endpoint);
+	}
+	
+	public Response getRequestwithqueryparam(String endpoint,  String key , String value)
+	{
+		return requestSpecification.contentType(ContentType.JSON).queryParam(key, value).get(endpoint);
 	}
 	
 }

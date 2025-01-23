@@ -17,16 +17,17 @@ public class LoginAPITest3 {
 	public void loginTest()
 	{
 		AuthService authService = new AuthService();
-		LoginRequest loginRequest = new LoginRequest("uday1234","uday1234");
-	Response response =	authService.login(loginRequest);
-	LoginResponse loginResponse= response.as(LoginResponse.class);
-	
-	System.out.println(response.asPrettyString());
-	System.out.println("token"+ " "+loginResponse.getToken());
-	System.out.println("email"+ " "+loginResponse.getEmail());
-	
-//	Assert.assertEquals(loginResponse.getEmail(), "raj@gmail.com");
-	
-	
+		//LoginRequest loginRequest = new LoginRequest("uday1234","uday1234");
+		LoginRequest loginRequest = new LoginRequest("suma","suma1234");
+		Response response =	authService.login(loginRequest);
+		LoginResponse loginResponse= response.as(LoginResponse.class);
+
+		System.out.println(response.asPrettyString());
+		System.out.println("token"+ " "+loginResponse.getToken());
+		System.out.println("email"+ " "+loginResponse.getEmail());
+		
+		Assert.assertEquals(loginResponse.getUsername(), "suma");
+
+
 	}
 }

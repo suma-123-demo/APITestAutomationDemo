@@ -1,5 +1,6 @@
 package com.api.tests;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.api.base.AuthService;
@@ -12,11 +13,11 @@ import io.restassured.response.Response;
 
 public class GetProfileRequest {
 
-	@Test(description = "get profile request")
+	@Test(description = "Get the user profile request")
 	public void getProfileInfoTest()
 	{
 		AuthService authService = new AuthService();
-		Response response=	authService.login(new LoginRequest("uday1234", "uday1234"));
+		Response response=	authService.login(new LoginRequest("suma","suma1234"));
 		LoginResponse loginResponse =response.as(LoginResponse.class);
 		String token=loginResponse.getToken();
 	    System.out.println(token);
@@ -25,7 +26,7 @@ public class GetProfileRequest {
 		response =userProfileManagement.getProfile(token);
 		UserProfileResponse userProfileResponse =	response.as(UserProfileResponse.class);
 		System.out.println( userProfileResponse.getEmail());
-		System.out.println(response.asPrettyString());
+		Assert.assertEquals(userProfileResponse.getUsername(), "suma");
 		
 	}
 }

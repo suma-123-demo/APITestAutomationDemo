@@ -10,7 +10,7 @@ public class TestListener implements ITestListener  {
 	
 	private static final Logger logger = LogManager.getLogger(TestListener.class);
 	
-	public void onTestStart(ITestContext context) {
+	public void onStart(ITestContext context) {
      logger.info("Test Suite started!!");
 	  }
 
@@ -20,12 +20,12 @@ public class TestListener implements ITestListener  {
 	
 	public  void onTestStart(ITestResult result) {
 		logger.info("started!"+ result.getMethod().getMethodName());
-		logger.info("descrption"+result.getMethod().getDescription());
+		logger.info("description"+result.getMethod().getDescription());
 	  }
 	
 	public void onTestSuccess(ITestResult result) {
 		logger.info("passed!"+ result.getMethod().getMethodName());
-		logger.info("descrption"+result.getMethod().getDescription());
+		logger.info("description"+result.getMethod().getDescription());
 
 	  }
 

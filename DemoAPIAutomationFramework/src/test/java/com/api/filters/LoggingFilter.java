@@ -29,13 +29,17 @@ public class LoggingFilter implements Filter{
 	}
 	
 	private void logRequest(FilterableRequestSpecification requestSpec) {
+		logger.info("BASE URI:" +requestSpec.getBaseUri() );
         logger.info("Request: {} {}", requestSpec.getMethod(), requestSpec.getURI());
         logger.info("Headers: {}", requestSpec.getHeaders());
+        logger.info("Request Payload: {}"+requestSpec.getBody());
     }
 
     private void logResponse(Response response) {
-        logger.info("Response Status: {}", response.getStatusCode());
-        logger.info("Response Body: {}", response.getBody().asString());
+    	logger.info("Response Status Code: {}", response.getStatusCode());
+    	logger.info("Response Header: {}", response.getHeaders());
+        logger.info("Response Body:"+ response.getBody().asPrettyString());
+      //  logger.info("Response Body: {}", response.getBody().asString());
     }
 	
 
